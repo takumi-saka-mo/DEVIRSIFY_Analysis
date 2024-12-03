@@ -23,7 +23,7 @@ Value : 株式時価総額 + 薄価負債
 
 
 ## Dir Structure
-
+```bash
 DEVIRSIFY_Analysis/
 ├── README.md
 ├── data/                 # データセット(csvファイル)
@@ -36,6 +36,7 @@ DEVIRSIFY_Analysis/
 │   ├── init.py
 │   ├── calculate_EXVAL.py # 超過価値算出クラス
 │   └── test.py            # テストスクリプト
+```
 
 ## Usage
 
