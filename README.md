@@ -14,11 +14,11 @@ $$ I \left(V \right) = \sum_{i=1}^n AI_i \times \left(Ind_i \left(\frac{V}{AI} \
 
 $$ EXVAL = ln \left( \frac{V}{I(V)} \right) $$
 
-- $$ I(V) $$ : 専業企業データより, 多角化企業の各事業のValue合計額
-- $$ AI_i $$ : 多角化企業の事業iの会計数値(総資産, 売上高, 利益)
-- $$ Ind_i(\frac{V}{A_i})_mf $$ : 産業iに属する専業企業のValueと会計数値の比率の中央値
-- $$ EXVAL $$ : 多角化企業の超過企業価値
-- $$ Value $$ : 株式時価総額 + 薄価負債
+$$ I(V) $$ : 専業企業データより, 多角化企業の各事業のValue合計額<br>
+$$ AI_i $$ : 多角化企業の事業iの会計数値(総資産, 売上高, 利益)<br>
+$$ Ind_i(\frac{V}{A_i})_mf $$ : 産業iに属する専業企業のValueと会計数値の比率の中央値<br>
+$$ EXVAL $$ : 多角化企業の超過企業価値<br>
+$$ Value $$ : 株式時価総額 + 薄価負債<br>
 
 
 ## Dir Structure
