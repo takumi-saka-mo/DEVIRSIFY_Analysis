@@ -25,7 +25,7 @@ class DiversifyApproach:
             self.value = market_cap + total_debt  # 企業価値の算出
             return self.value
         except KeyError:
-            print(f"{self.YELLOW}Error: 証券コードが無効のため None を変えす {self.ticker}.{self.RESET}")
+            print(f"{self.YELLOW}Error: 証券コードが無効のため None を返す {self.ticker}.{self.RESET}")
             return None
         except Exception as e:
             print(f"{self.RED}Error : 期待しない企業価値が算出されたため None を返す {self.ticker}: {e}{self.RESET}")
@@ -45,7 +45,7 @@ class DiversifyApproach:
             print(f"証券コード : {self.ticker}")
             print(f"\n総資産 : {total_assets} \n売上高 : {total_revenue} \n営業利益 : {operating_income}")
         except Exception as e:
-            print(f"{self.RED}Error retrieving financial data for {self.ticker}: {e}{self.RESET}")
+            print(f"{self.RED}Error : 次の証券コードにてデータ取得に失敗 {self.ticker}: {e}{self.RESET}")
 
     def calculate_specialized_value(self, specialized_tickers):
         """関連企業の中央値を計算"""
@@ -60,7 +60,7 @@ class DiversifyApproach:
 
                     data.append({"ticker": ticker, "Market Cap": market_cap, "Revenue": total_revenue})
                 except Exception as e:
-                    print(f"{self.YELLOW}Error processing {ticker}: {e}{self.RESET}")
+                    print(f"{self.YELLOW}Error : {ticker}: {e}{self.RESET}")
 
             if data:
                 df = pd.DataFrame(data)
@@ -68,10 +68,10 @@ class DiversifyApproach:
                 median_ratio = df["Market Cap / Revenue"].median()
                 return median_ratio
             else:
-                print(f"{self.RED}No valid data for specialized tickers.{self.RESET}")
+                print(f"{self.RED}期待しないデータです {self.RESET}")
                 return 0
         except Exception as e:
-            print(f"{self.RED}Error calculating specialized value: {e}{self.RESET}")
+            print(f"{self.RED}Error : value算出に失敗{e}{self.RESET}")
             return 0
 
     def calculate_exval(self, seg_list):
@@ -89,10 +89,10 @@ class DiversifyApproach:
                 exval = math.log(self.value / total_iv)
                 return exval
             else:
-                print(f"{self.RED}Total_IV is 0 or negative. Cannot calculate EXVAL.{self.RESET}")
+                print(f"{self.RED}Total_IV < 0 のため, EXVALの計算ができません.{self.RESET}")
                 return None
         except Exception as e:
-            print(f"{self.RED}Error calculating EXVAL: {e}{self.RESET}")
+            print(f"{self.RED}Error : EXVALの計算に失敗しました.{e}{self.RESET}")
             return None
         
 
