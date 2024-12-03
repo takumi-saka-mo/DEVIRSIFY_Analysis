@@ -9,11 +9,11 @@ Yahoo Finance を使用し, 企業価値や専門企業の倍率, 対象企業�
 
 Berger/Ofek[1995]の分析モデル
 
-```TEX
-$$ I \left(V \right) = \sum_{i=1}^n AI_i \times \left(Ind_i \left(\frac{V}{AI} \right)_{mf} \right) $$
+```tex
+I \left(V \right) = \sum_{i=1}^n AI_i \times \left(Ind_i \left(\frac{V}{AI} \right)_{mf} \right)
 
 
-$$ EXVAL = ln \left( \frac{V}{I(V)} \right)$$
+EXVAL = ln \left( \frac{V}{I(V)} \right)
 
 - I(V) : 専業企業データより, 多角化企業の各事業のValue合計額
 - AI_i : 多角化企業の事業iの会計数値(総資産, 売上高, 利益)
