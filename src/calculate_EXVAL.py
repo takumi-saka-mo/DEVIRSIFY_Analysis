@@ -97,30 +97,27 @@ class DiversifyApproach:
             return None
         
 
-# モジュールとして使用可能にする
 if __name__ == "__main__":
 
     # テスト用データ
-    file = "./csv/APPL_category.csv"
-    data = pd.read_csv(file, encoding="UTF-8").set_index("Category")
-    data["Devices"] = data["iPhone"] + data["Mac"] + data["iPad"] + data["Wearables, Home and Accessories"]
-    data = data.drop(columns=["iPhone", "Mac", "iPad", "Wearables, Home and Accessories"])
+    file = ""
+    data = {}
 
     # セグメントごとの売上
-    seg1_value = data["Services"].iloc[0] * 1e6
-    seg2_value = data["Devices"].iloc[0] * 1e6
-    seg_list = [seg1_value, seg2_value]
+    seg1_value = ""
+    seg2_value = ""
+    seg_list = []
 
     # 専門企業リスト
-    services_companies = ["NFLX", "DBX", "SPOT"]
-    devices_companies = ["HPQ", "DELL", "LNVGY"]
-    specialized_tickers = [services_companies, devices_companies]
+    services_companies = []
+    devices_companies = []
+    specialized_tickers = []
 
     # クラスインスタンス作成
     div_approach = DiversifyApproach(
-        ticker="AAPL",
-        specialized_tickers=specialized_tickers,
-        data=data
+        ticker = "",
+        specialized_tickers = specialized_tickers,
+        data = data
     )
 
     # 企業価値の計算
