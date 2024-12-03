@@ -1,4 +1,4 @@
-# Diversify Approach: 超過価値（EXVAL） *
+# Diversify Approach: 超過価値（EXVAL）
 
 企業のセグメント別売上データをもとに超過価値（EXVAL）を計算するモジュールを作成.
 Yahoo Finance を使用し, 企業価値や専門企業の倍率, 対象企業の超過価値算出する.
@@ -7,10 +7,7 @@ Yahoo Finance を使用し, 企業価値や専門企業の倍率, 対象企業�
 
 ## 超過価値アプローチモデルについて
 Berger/Ofek[1995]の分析モデル
-$$
-I \left(V \right) = 
-\sum_{i=1}^n AI_i \times \left(Ind_i \left(\frac{V}{AI} \right)_{mf} \right)
-$$
+$$ I \left(V \right) = \sum_{i=1}^n AI_i \times \left(Ind_i \left(\frac{V}{AI} \right)_{mf} \right) $$
 
 
 $$ EXVAL = ln \left( \frac{V}{I(V)} \right)$$
