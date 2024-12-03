@@ -1,4 +1,4 @@
-# Diversify Approach: 超過価値（EXVAL）
+# DIVERSIFY_Analysis: 超過価値（EXVAL）
 
 企業のセグメント別売上データをもとに超過価値（EXVAL）を計算するモジュールを作成.
 Yahoo Finance を使用し, 企業価値や専門企業の倍率, 対象企業の超過価値算出する.
@@ -25,21 +25,21 @@ Value : 株式時価総額 + 薄価負債
 ## Dir Structure
 
 DEVIRSIFY_Analysis/
-├──  README.md            # プロジェクト概要
-├── data/                 # データセット(csv等)
+├── README.md
+├── data/                 # データセット(csvファイル)
 │   ├── RAKUTEN.csv
-│   └── template.csv
+│   ├── template.csv
 │   └── etc.
-├── notebooks/            # ipynbファイル
+├── notebooks/            # Notebookファイル
 │   └── Diversify.ipynb
-├── src/                  # ソースコード
-   ├── __init__.py      
-   ├── calculate_EXVAL.py # Pythonスクリプト（クラスや関数
-   └── test.py
+├── src/
+│   ├── init.py
+│   ├── calculate_EXVAL.py # 超過価値算出クラス
+│   └── test.py            # テストスクリプト
 
 ## Usage
 
-1. requirment
+1. Requirements
 ```bash
 pip install pandas yfinance
 ```
