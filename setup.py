@@ -8,6 +8,7 @@ setuptools.setup(
     version="1.0.0",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
+    license="MIT",
     description="A package to calculate EXVAL values using finance data.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -17,11 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(where="src"),
-    package_dir={"": "src"},  # 僕はここにいるよ
+    packages=setuptools.find_packages(where="src"),  # src 内のすべてのパッケージを検出
+    package_dir={"": "src"},  # src をルートに設定
     python_requires=">=3.7",
-    install_requires=[
-        "pandas",
-        "yfinance",
-    ],
+    install_requires=["pandas", "yfinance"],
 )
