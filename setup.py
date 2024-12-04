@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="DiversifyApproach_package", 
+    name="DiversifyApproach_package",
     version="0.0.1",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
@@ -19,7 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     packages=setuptools.find_packages(where="src"),
-    package_dir={"": "src"},  # 僕はここ
+    package_dir={"": "src"},  # 僕はここにいるよ
     python_requires=">=3.7",
     install_requires=[
         "pandas",
