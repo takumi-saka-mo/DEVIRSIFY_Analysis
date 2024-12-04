@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="my_finance_package",  # パッケージの名前
+    name="DiversifyApproach_package",  # パッケージの名前
     version="0.0.1",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
@@ -12,7 +12,7 @@ setuptools.setup(
     description="A package to calculate beta values using finance data.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/takumi-saka-mo/my_module",
+    url="https://github.com/takumi-saka-mo/DEVIRSIFY_Analysis",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -22,8 +22,6 @@ setuptools.setup(
     python_requires=">=3.7",
     install_requires=[
         "pandas",
-        "numpy",
-        "scikit-learn",
         "yfinance"
     ],
 )
