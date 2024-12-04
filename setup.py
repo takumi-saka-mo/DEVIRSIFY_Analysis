@@ -8,7 +8,6 @@ setuptools.setup(
     version="1.0.0",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
-    license="MIT",
     description="A package to calculate EXVAL values using finance data.",
     long_description=long_description,
     long_description_content_type="text/markdown",
