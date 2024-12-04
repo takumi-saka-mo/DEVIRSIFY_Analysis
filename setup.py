@@ -18,8 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(where="src"),  # src 内のすべてのパッケージを検出
-    package_dir={"": "src"},  # src をルートに設定
+    packages=setuptools.find_packages(where="src"), 
+    package_dir={"": "src"},  # 僕はここ
     python_requires=">=3.7",
     install_requires=["pandas", "yfinance"],
 )
