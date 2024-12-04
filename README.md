@@ -64,7 +64,7 @@ mobile_companies = ["9432.T", "9434.T", "9433.T"]    # モバイル領域
 
 specialized_tickers = [services_companies, fintech_companies, mobile_companies]
 
-# DiversifyApproachクラスのインスタンス化
+# DiversifyApproachクラス
 div_approach = DiversifyApproach(
     ticker = "4755.T",  # 楽天
     specialized_tickers = specialized_tickers,
