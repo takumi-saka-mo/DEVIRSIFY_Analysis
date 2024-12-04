@@ -4,8 +4,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="DiversifyApproach_package",  # パッケージ名
-    version="1.0.0",  # バージョン
+    name="DiversifyApproach_package",
+    version="1.0.0",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
     description="A package to calculate EXVAL values using finance data.",
@@ -17,11 +17,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=["DiversifyApproach_package"],
-    package_dir={"": "src"},  # 僕はここ
+    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "src"},
     python_requires=">=3.7",
     install_requires=["pandas", "yfinance"],
-    include_package_data=True, 
-    
-
+    include_package_data=True,
 )
