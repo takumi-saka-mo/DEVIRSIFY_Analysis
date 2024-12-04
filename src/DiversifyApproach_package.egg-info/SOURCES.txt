@@ -4,13 +4,11 @@ setup.py
 test_setup.py
 data/RAKUTEN.csv
 data/template.csv
-dist/DiversifyApproach_package-1.0.0-py3-none-any.whl
-dist/DiversifyApproach_package-1.0.0.tar.gz
 notebooks/Diversify.ipynb
 notebooks/analysis.ipynb
-src/__init__.py
-src/calculate_EXVAL.py
 src/test.py
+src/DiversifyApproach_package/__init__.py
+src/DiversifyApproach_package/calculate_EXVAL.py
 src/DiversifyApproach_package.egg-info/PKG-INFO
 src/DiversifyApproach_package.egg-info/SOURCES.txt
 src/DiversifyApproach_package.egg-info/dependency_links.txt

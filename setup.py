@@ -21,4 +21,6 @@ setuptools.setup(
     package_dir={"": "src"},  # 僕はここ
     python_requires=">=3.7",
     install_requires=["pandas", "yfinance"],
+    include_package_data=True, 
+
 )
