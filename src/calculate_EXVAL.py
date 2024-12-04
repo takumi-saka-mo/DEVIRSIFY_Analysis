@@ -112,7 +112,7 @@ if __name__ == "__main__":
     devices_companies = []
     specialized_tickers = []
 
-    # クラスインスタンス作成
+    # DiversifyApproach インスタンス
     div_approach = DiversifyApproach(
         ticker = "",
         specialized_tickers = specialized_tickers,
