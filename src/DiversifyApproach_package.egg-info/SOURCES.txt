@@ -4,6 +4,8 @@ setup.py
 test_setup.py
 data/RAKUTEN.csv
 data/template.csv
+dist/DiversifyApproach_package-1.0.0-py3-none-any.whl
+dist/DiversifyApproach_package-1.0.0.tar.gz
 notebooks/Diversify.ipynb
 notebooks/analysis.ipynb
 src/__init__.py
