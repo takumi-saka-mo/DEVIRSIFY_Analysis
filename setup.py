@@ -17,10 +17,11 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(where="src"),
+    packages=["DiversifyApproach_package"],
     package_dir={"": "src"},  # 僕はここ
     python_requires=">=3.7",
     install_requires=["pandas", "yfinance"],
     include_package_data=True, 
+    
 
 )
