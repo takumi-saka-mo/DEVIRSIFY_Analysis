@@ -23,18 +23,23 @@ $$ Value  : 株式時価総額 + 薄価負債 $$ <br>
 
 ## Dir Structure
 ```bash
-DEVIRSIFY_Analysis/
+
+.
 ├── README.md
-├── data/                 # データセット(csvファイル)
-│   ├── RAKUTEN.csv
-│   ├── template.csv
-│   └── etc.
-├── notebooks/            # Notebookファイル
-│   └── Diversify.ipynb
-├── src/
-│   ├── init.py
-│   ├── calculate_EXVAL.py # 超過価値算出クラス
-│   └── test.py            # テストスクリプト
+├── data/                  # データセット(csvファイル)
+│   ├── AAPL_category.csv
+│   ├── RAKUTEN.csv
+│   └── template.csv
+├── notebooks/             # Notebookファイル
+│   ├── AAPL.ipynb
+│   ├── Diversify.ipynb
+│   └── sample.ipynb
+├── setup.py
+└── src
+    ├── __init__.py
+    ├── calculate_EXVAL.py # 超過価値算出クラス
+    └── test.py            # テストスクリプト
+
 ```
 
 ## Usage
