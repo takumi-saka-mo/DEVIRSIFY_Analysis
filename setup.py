@@ -18,7 +18,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=['src'],
+    packages=['calculate_EXVAL'],
     python_requires=">=3.7",
     install_requires=[
         "pandas",
