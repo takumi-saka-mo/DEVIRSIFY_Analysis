@@ -1,5 +1,5 @@
 import unittest
-from calculate_EXVAL.calculate_EXVAL import DiversifyApproach
+from src.calculate_EXVAL import DiversifyApproach
 
 import pandas as pd
 import sys
