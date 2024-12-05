@@ -12,7 +12,7 @@ setuptools.setup(
     description="A package to calculate EXVAL values using finance data.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/takumi-saka-mo/my_module",
+    url="https://github.com/takumi-saka-mo/DEVIRSIFY_Analysis",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
