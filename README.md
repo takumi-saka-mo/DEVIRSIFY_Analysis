@@ -26,6 +26,10 @@ $$ Value  : 株式時価総額 + 薄価負債 $$ <br>
 
 .
 ├── README.md
+├── calculate_EXVAL
+│   ├── __init__.py
+│   ├── calculate_EXVAL.py # 超過価値算出クラス
+│   └── test.py            # テストスクリプト
 ├── data/                  # データセット(csvファイル)
 │   ├── AAPL_category.csv
 │   ├── RAKUTEN.csv
@@ -34,11 +38,8 @@ $$ Value  : 株式時価総額 + 薄価負債 $$ <br>
 │   ├── AAPL.ipynb
 │   ├── Diversify.ipynb
 │   └── sample.ipynb
-├── setup.py
-└── src
-    ├── __init__.py
-    ├── calculate_EXVAL.py # 超過価値算出クラス
-    └── test.py            # テストスクリプト
+└── setup.py
+
 
 ```
 
@@ -46,21 +47,19 @@ $$ Value  : 株式時価総額 + 薄価負債 $$ <br>
 
 1. Requirements
 ```bash
-pip install pandas yfinance
+! pip install git+https://github.com/takumi-saka-mo/DEVIRSIFY_Analysis.git
 ```
 
 2. クラス calculate_EXVAL の用法
 (楽天の企業超過価値を算出する場合)
 ```python
-from src.calculate_EXVAL import DiversifyApproach
+from calculate_EXVAL import DiversifyApproach
 import pandas as pd
 
 # セグメント別売上データの準備
-data = pd.DataFrame({
-    "Services": [314570], 
-    "FinTech": [208229], 
-    "Mobile": [105986]
-}) # HPより引用
+url = "https://raw.githubusercontent.com/takumi-saka-mo/DEVIRSIFY_Analysis/main/data/RAKUTEN.csv" # HP掲載データより作成
+data = pd.read_csv(url, encoding = "UTF-8").set_index("Category")
+
 
 # 専門企業リストの定義
 services_companies = ["4686.T", "3092.T", "2371.T"]  # サービス領域
