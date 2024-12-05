@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="DiversifyApproach_package",  # パッケージの名前
-    version="0.0.1",
+    version="0.0.2",
     author="Takumi Sakamoto",
     author_email="takumi.saka.mo0107@gmail.com",
     license='MIT',
