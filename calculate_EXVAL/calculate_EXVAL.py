@@ -9,7 +9,7 @@ class DiversifyApproach:
         self.data = data
         self.segment_data = None
         self.value = None
-
+        # 出力用, 特にエラーの際に赤字で表示(したい..)
         self.RED = "\033[91m"
         self.GREEN = "\033[92m"
         self.RESET = "\033[0m"
