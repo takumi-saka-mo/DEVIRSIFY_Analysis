@@ -1,3 +1,4 @@
 .DS_Store
 src
+/calculate_EXVAL/test.py
 **/__pycache__/**
