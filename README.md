@@ -29,7 +29,6 @@ $$ Value  : 株式時価総額 + 薄価負債 $$ <br>
 ├── calculate_EXVAL
 │   ├── __init__.py
 │   ├── calculate_EXVAL.py # 超過価値算出クラス
-│   └── test.py            # テストスクリプト
 ├── data/                  # データセット(csvファイル)
 │   ├── AAPL_category.csv
 │   ├── RAKUTEN.csv
