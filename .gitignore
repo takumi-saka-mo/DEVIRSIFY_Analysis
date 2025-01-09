@@ -1,4 +1,5 @@
 .DS_Store
 src
 /calculate_EXVAL/test.py
+/notebooks/template.ipynb
 **/__pycache__/**
